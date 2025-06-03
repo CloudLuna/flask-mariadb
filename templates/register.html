@@ -1,6 +1,5 @@
 <!doctype html>
 <title> Register - MariaDB-Flaskr</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <section class="content">
   <header>
     Register 
@@ -10,7 +9,7 @@
   {% endfor %}
   <form method="post">
     <label for="username">Username</label>
-    <input name="username" id="username" required>
+    <input name="username" id="username">
     <label for="password">Password</label>
     <input type="password" name="password" id="password" required>
     <input type="submit" value="Register">
